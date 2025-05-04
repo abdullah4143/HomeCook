@@ -1,17 +1,15 @@
-// src/components/FoodItem.jsx
-
 import React from 'react';
 
 const FoodItem = ({ item, onAddToCart }) => {
-  const { id, name, description, price, servings, imageUrl } = item;
+  const { id, name, description, price, servings, image } = item;
 
   const handleAddToCart = () => {
-    onAddToCart(item); 
+    onAddToCart(item);
   };
 
   return (
-    <div key={id} className="max-w-xs rounded-lg border border-gray-300 shadow-lg overflow-hidden">
-      <img src={imageUrl} alt={name} className="w-full h-48 object-cover" />
+    <div key={id} className="w-full sm:w-11/12 lg:w-72 max-w-xs mx-auto rounded-lg border border-gray-300 shadow-lg overflow-hidden">
+      <img src={image} alt={name} className="w-full h-48 object-cover" />
       <div className="p-4">
         <h3 className="text-xl font-semibold text-gray-800">{name}</h3>
         <p className="text-gray-600 text-sm mt-2">{description}</p>

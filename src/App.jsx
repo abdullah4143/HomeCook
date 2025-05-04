@@ -15,7 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/cart" element={<CartPage />} />
-            <Route path="/confirmation" element={<ConfirmationPage />} />
+            <Route path="/cart/confirm" element={<ConfirmationPage />} />
           </Routes>
         </main>
         <Footer />
